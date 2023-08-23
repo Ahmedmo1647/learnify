@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="shortcut icon" href="images/OIP (2).png" type="image/x-icon">
+        <title>Register | Learnify</title>
+        <style>
+            form {
+                margin-left: 500px;
+                margin-top: 20px;
+            }
+
+            form div input {
+                width: 40%;
+                padding: 10px 0px 10px 10px ;
+                font-size: 20px;
+                border-radius: 3px;
+                border: 1px solid rgb(190, 190, 190);
+                transition: 0.5s;
+            }
+
+            form div input:hover {
+                box-shadow: 0px 0px 30px 0px cyan;
+                border: 1px solid cyan;
+            }
+
+            form h3 {
+                font-size: 50px;
+                padding: 0px 0px 30px 95px;
+            }
+
+            form .submit {
+                width: 40.5%;
+                background-color: black;
+                color: cyan;
+                border: 0;
+                border-radius: 10px;
+                padding: 5px 5px 5px 5px ;
+                margin-top: 70px;
+                font-size: 30px;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+            form .submit:hover {
+                background-color: cyan;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="Logo" href="index.html">Learnify</a>
+            <nav class="navbar">
+                <a class="home" href="index.html">Home</a>
+                <a class="courses" href="courses.html">All Courses</a>
+                <a class="ins" href="insreg.html">Teacher Registeration</a>
+                <a class="stu" href="stureg.html">Student Registeration</a>
+            </nav>
+        </header>
+        <h3 style="padding-left: 50px;opacity: 50%;">Learnify -> Teacher Registeration</h3>
+
+        <form method="post" action="Myaccount.html">
+            <h3>Register</h3><br/>
+            <div>
+                <input type="text" placeholder="Name:" name="name"><br/><br/>
+                <input type="tel" placeholder="Phone number" name="phone"><br/><br/>
+                <input type="email" placeholder="Email:" name="email"><br/><br/>
+                <input type="password" placeholder="Password:" name="password"><br/><br/>
+                <label for="select"> What's your Specialization?</label><select  style="margin-left: 40px;
+                height: 30px;" name="" id="select">
+                    <optgroup label="Subjects">
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Science">Science</option>
+                        <option value="French">French</option>
+                        <option value="Social">Social</option>
+                    </optgroup>
+                    <optgroup label="Programming">
+                        <option>Web development</option>
+                        <option>Mobile development</option>
+                    </optgroup>
+                </select>
+                <!-- <label for="select"> What's your Specialization?</label><select style="margin-left: 60px;padding-left: 2.5%;
+                padding-right: 2.5%;height: 30px;" name="" id="select">
+                    <optgroup label="Subjects">
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Science">Science</option>
+                        <option value="French">French</option>
+                        <option value="Social">Social</option>
+                    </optgroup>
+                </select> -->
+                <br/>
+                <br/>
+                <!-- <a style="color: black;" href="#forgot password">Forgot password</a> -->
+            </div>
+            <input style="cursor: pointer;margin-left: 10px;" type="checkbox" name="check" id="check"><label style="cursor: pointer;" for="check"> Remember me</label>
+            <br/>
+            <input class="submit" type="submit" value="Register" name="submit"><br/>
+            <label for="sign" style="cursor: pointer;margin-top: 100px;"> Already a member</label><a id="sign" style="margin-top:30px;padding-left: 140px;color: black;" href="#">Sign in Now</a>
+            <!-- <label for="sign" style="cursor: pointer;">Don't have an account</label><a id="sign" style="padding-left: 110px;" href="#">Sign up Now</a> -->
+        </form>
+        <br/>
+        <br/>
+        <!-- <footer>
+            <h2>Learnify</h2>
+            <nav>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </nav>
+        </footer> -->
+    </body>
+</html>
